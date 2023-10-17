@@ -43,6 +43,3 @@ package-lock.json
 # System files
 .DS_Store
 Thumbs.db
-
-# Exceptions of gitignore rules (don't wanna install bootstrap locally for each project)
-!node_modules/bootstrap
