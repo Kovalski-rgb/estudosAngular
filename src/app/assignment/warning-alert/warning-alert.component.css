@@ -1,0 +1,25 @@
+.square{
+    color: darkred;
+    background-color: tomato;
+    padding: 1rem 2rem;
+    width: min-content;
+    border-radius: 16px;
+    user-select: none;
+    margin: 0.4rem;
+    transition: color 0.1s, transform 0.2s;
+}
+
+.square:hover{
+    color: tomato;
+    background-color: darkred;
+}
+
+.square:active{
+    /* se possivel remover o tempo da transição SÓ no filter */
+    filter: brightness(70%);
+    transform: scale(0.95);
+}
+
+h3{
+    margin: 0;
+}

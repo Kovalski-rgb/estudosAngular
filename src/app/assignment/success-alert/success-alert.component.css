@@ -1,0 +1,27 @@
+.square{
+    background-color: lightgreen;
+    color: seagreen;
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    width: min-content;
+    transition: all 0.1s;
+    user-select: none;
+    margin: 0.4rem;
+    transition: color 0.1s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.square:hover{
+    background-color: seagreen;
+    color: palegoldenrod;
+}
+
+
+.square:active{
+    /* se possivel remover o tempo da transição SÓ no filter */
+    filter: brightness(70%);
+    transform: scale(0.95);
+}
+
+h3{
+    margin: 0;
+}
