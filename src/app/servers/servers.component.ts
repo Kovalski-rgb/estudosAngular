@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-  // selector: [app-servers], //para diretivas (vide exemplo relativo no html)
-  // selector: .app-servers, //para classes (vide exemplo relativo no html)
 @Component({
   selector: 'app-servers',
   templateUrl: './servers.component.html',
@@ -11,6 +9,7 @@ export class ServersComponent implements OnInit {
   allowNewServer = false;
   serverCreationStatus = 'No server was created!';
   serverName = "Teste Server";
+  serverCreated = false;
 
   constructor() {
     setTimeout(() => {
@@ -22,6 +21,7 @@ export class ServersComponent implements OnInit {
   }
 
   onCreateServer(){
+    this.serverCreated = true;
     this.serverCreationStatus = "Server was Created! Name is "+this.serverName;
   }
 
