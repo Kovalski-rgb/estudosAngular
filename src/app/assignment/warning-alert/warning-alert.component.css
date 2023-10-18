@@ -23,3 +23,10 @@
 h3{
     margin: 0;
 }
+
+p{
+  padding: 1.25rem;
+  background-color: mistyrose;
+  border: 1px solid red;
+  color: red;
+}

@@ -25,3 +25,10 @@
 h3{
     margin: 0;
 }
+
+p{
+    padding: 1.25rem;
+    background-color: palegreen;
+    border: 1px solid green;
+    color: green;
+}

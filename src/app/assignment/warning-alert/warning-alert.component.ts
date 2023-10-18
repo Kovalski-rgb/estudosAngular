@@ -9,8 +9,7 @@ export class WarningAlertComponent implements OnInit {
 
   message = "Warning!"
 
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }
