@@ -7,6 +7,7 @@ import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './assignment/warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './assignment/success-alert/success-alert.component';
 import { AssignmentComponent } from './assignment/assignment.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   // declara que tal componente existe
@@ -19,7 +20,8 @@ import { AssignmentComponent } from './assignment/assignment.component';
     AssignmentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
