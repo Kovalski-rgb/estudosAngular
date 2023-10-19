@@ -10,6 +10,7 @@ import { AssignmentComponent } from './assignment/assignment.component';
 import { FormsModule } from '@angular/forms';
 import { Assignment02Component } from './assignment02/assignment02.component';
 import { InstructorsTakeAs02Component } from './assignment02/instructors-take-as02/instructors-take-as02.component';
+import { Assignment03Component } from './assignment03/assignment03.component';
 
 @NgModule({
   // declara que tal componente existe
@@ -21,7 +22,8 @@ import { InstructorsTakeAs02Component } from './assignment02/instructors-take-as
     SuccessAlertComponent,
     AssignmentComponent,
     Assignment02Component,
-    InstructorsTakeAs02Component
+    InstructorsTakeAs02Component,
+    Assignment03Component
   ],
   imports: [
     BrowserModule,
