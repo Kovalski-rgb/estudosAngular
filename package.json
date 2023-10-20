@@ -1,11 +1,11 @@
 {
-  "name": "template",
+  "name": "03-projeto",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --configuration production --base-href https://kovalski-rgb.github.io/estudosAngular/",
+    "build:ghPages": "ng build --configuration production --base-href /estudosAngular/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
