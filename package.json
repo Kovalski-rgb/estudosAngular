@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --configuration production --base-href https://kovalski-rgb.github.io/estudosAngular/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
