@@ -1,11 +1,12 @@
 {
-  "name": "template",
+  "name": "template-main-branch",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "build:ghPages": "ng build --configuration production --base-href /estudosAngular/",
     "test": "ng test"
   },
   "private": true,
