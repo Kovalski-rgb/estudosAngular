@@ -1,11 +1,28 @@
-# Angular
-Repo pros projetos do angular que vão aparecer durante o curso
+### Lyfecycle hooks dos componentes em angular
 
-A branch main será o template, e cada branch nova será um outro projeto  
-Na teoria o npm install em qualquer branch também serve para o template, e o install no template cobre a maioria dos pacotes nas outras branches, se não todos
-
-
-Para cada branch do main:
- - mudar no main.yml, a linha 6 e 22, de main para a branch nova
- - Rodar esse comando no `find . \( -type d -name "src" -name ".git" -name ".github" -name "node_modules" -prune \) -o -type f -print0 | xargs -0 sed -i 's/template-main-branch/[NOME DO PROJETO]/g'`, onde [NOME DO PROJETO] é o nome do projeto 
- - NÃO RODAR NO WINDOWS (na verdade em qqr lugar, tenho que testar esse comando certinho)
+<table>
+    <tr>
+        <td>ngOnChanges</td><td>Called after a bound input property changes</td>
+    </tr>
+    <tr>
+        <td>ngOninit</td><td>Called once the component is initialized</td>
+    </tr>
+    <tr>
+        <td>ngDoCheck</td><td>Called during every change detection run</td>
+    </tr>
+    <tr>
+        <td>ngAfterContentInit</td><td>Called after content (ng-content) has been projected into view</td>
+    </tr>
+    <tr>
+        <td>ngAfterContentChecked</td><td>Called every time the projected content has been checked</td>
+    </tr>
+    <tr>
+        <td>ngAfterViewInit</td><td>Called after the component's view (and child views) has been initialized</td>
+    </tr>
+    <tr>
+        <td>ngAfterViewChecked</td><td>Called every time the view (and chield views) have been checked</td>
+    </tr>
+    <tr>
+        <td>ngOnDestroy</td><td>Called once the component is about to be destroyed</td>
+    </tr>
+</table>

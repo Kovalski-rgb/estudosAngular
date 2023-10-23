@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation, OnChanges, SimpleChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-server-element',
@@ -10,17 +10,54 @@ import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
   // desse componente, somente o body do componente é alterado, nada mais
   encapsulation: ViewEncapsulation.Emulated //None, ShadowDom
 })
-export class ServerElementComponent implements OnInit {
+export class ServerElementComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked,
+  AfterViewInit, AfterViewChecked, OnDestroy {
   @Input('srvElement')
   element: {
     type: string,
     name: string,
     content: string
   };
+  @Input() name : string;
+  @ViewChild('heading') header : ElementRef;
 
-  constructor() { }
+  constructor() {
+    console.log("Constructor call!");
+  }
 
   ngOnInit(): void {
+    console.log("ngOnInit call!");
+    console.log("textContent: "+this.header.nativeElement.textContent);
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log("ngOnChanges call!");
+    console.log(changes);
+  }
+
+  ngDoCheck(): void {
+    console.log("ngDoCheck call!");
+  }
+
+  ngAfterContentInit(): void {
+    console.log("ngAfterContentInit call!");
+  }
+
+  ngAfterContentChecked(): void{
+    console.log("AfterContentChecked call!");
+  }
+
+  ngAfterViewInit(): void {
+    console.log("ngAfterViewInit call!");
+    console.log("textContent: "+this.header.nativeElement.textContent);
+  }
+
+  ngAfterViewChecked(): void {
+    console.log("ngAfterViewChecked Call!");
+  }
+  
+  ngOnDestroy(): void {
+    console.log('ngOnDestroy call!');;
   }
 
 }
