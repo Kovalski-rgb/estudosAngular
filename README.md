@@ -8,3 +8,4 @@ Na teoria o npm install em qualquer branch também serve para o template, e o in
 Para cada branch do main:
  - mudar no main.yml, a linha 6 e 22, de main para a branch nova
  - Rodar esse comando no `find . \( -type d -name "src" -name ".git" -name ".github" -name "node_modules" -prune \) -o -type f -print0 | xargs -0 sed -i 's/template-main-branch/[NOME DO PROJETO]/g'`, onde [NOME DO PROJETO] é o nome do projeto 
+ - NÃO RODAR NO WINDOWS (na verdade em qqr lugar, tenho que testar esse comando certinho)
