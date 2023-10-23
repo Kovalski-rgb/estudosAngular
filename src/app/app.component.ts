@@ -7,10 +7,6 @@ import { Cycle } from './shared/cycle.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  cycles : number[] = [];
-
-  getGameCycle(cycleData : Cycle){
-    this.cycles.push(cycleData.value);
-  }
+  
 
 }

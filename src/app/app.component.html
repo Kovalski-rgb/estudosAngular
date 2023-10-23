@@ -17,14 +17,8 @@
   <hr>
   <div class="row">
     <div class="col-xs-12">
-      <app-game-control
-      (onGameCycle)="getGameCycle($event)" ></app-game-control>
-      
-      <div class="row col-xs-12 panel-heading" 
-      *ngFor="let cycle of cycles">
-        <app-odd *ngIf="cycle%2!=0" [number]="cycle"></app-odd>
-        <app-even *ngIf="cycle%2==0" [number]="cycle"></app-even>
-      </div>
+      <app-my-answer></app-my-answer>
+      <app-instructors-take></app-instructors-take>
     </div>
   </div>
 </div>
