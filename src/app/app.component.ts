@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Cycle } from './shared/cycle.model';
 
 @Component({
   selector: 'app-root',
@@ -6,4 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  cycles : number[] = [];
+
+  getGameCycle(cycleData : Cycle){
+    this.cycles.push(cycleData.value);
+  }
+
 }
