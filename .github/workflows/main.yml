@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-    - 03-project-basics
+    - 06-project-component-comms
 
 
 permissions:
@@ -19,7 +19,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       with:
-        ref: 03-project-basics
+        ref: 06-project-component-comms
 
     - name: Setup Node.js
       uses: actions/setup-node@v2
