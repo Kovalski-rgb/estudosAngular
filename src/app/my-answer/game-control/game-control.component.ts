@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { Cycle } from '../shared/cycle.model';
+import { Cycle } from '../../shared/cycle.model';
 
 @Component({
   selector: 'app-game-control',

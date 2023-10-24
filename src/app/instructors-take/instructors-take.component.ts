@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./instructors-take.component.css']
 })
 export class InstructorsTakeComponent implements OnInit {
+  oddNumbers: number[] = [];
+  evenNumbers: number[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onIntervalFired(firedNumber: number) {
+    if(firedNumber%2==0){
+      this.evenNumbers.push(firedNumber);
+    }else{
+      this.oddNumbers.push(firedNumber);
+    }
   }
 
 }

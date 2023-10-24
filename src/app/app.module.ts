@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { GameControlComponent } from './game-control/game-control.component';
-import { OddComponent } from './odd/odd.component';
-import { EvenComponent } from './even/even.component';
+import { GameControlComponent } from './my-answer/game-control/game-control.component';
+import { OddComponent } from './my-answer/odd/odd.component';
+import { EvenComponent } from './my-answer/even/even.component';
 import { InstructorsTakeComponent } from './instructors-take/instructors-take.component';
 import { MyAnswerComponent } from './my-answer/my-answer.component';
 import { GameControlItComponent } from './instructors-take/game-control-it/game-control-it.component';

@@ -1,1 +1,11 @@
-<p>instructors-take works!</p>
+<div class="row">
+    <div class="col-xs-12">
+        <app-game-control-it (intervalFired)="onIntervalFired($event)"></app-game-control-it>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <app-odd-it *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd-it>
+        <app-even-it *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even-it>
+    </div>
+</div>
