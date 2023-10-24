@@ -9,6 +9,9 @@ import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
 import { InstructorsTakeComponent } from './instructors-take/instructors-take.component';
 import { MyAnswerComponent } from './my-answer/my-answer.component';
+import { GameControlItComponent } from './instructors-take/game-control-it/game-control-it.component';
+import { OddItComponent } from './instructors-take/odd-it/odd-it.component';
+import { EvenItComponent } from './instructors-take/even-it/even-it.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { MyAnswerComponent } from './my-answer/my-answer.component';
     OddComponent,
     EvenComponent,
     InstructorsTakeComponent,
-    MyAnswerComponent
+    MyAnswerComponent,
+    GameControlItComponent,
+    OddItComponent,
+    EvenItComponent
   ],
   imports: [
     BrowserModule,
