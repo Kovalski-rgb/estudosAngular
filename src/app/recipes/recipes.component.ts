@@ -14,4 +14,8 @@ export class RecipesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  recipeSelected(recipe: Recipe){
+    this.selectedRecipe = recipe;
+  }
+
 }
