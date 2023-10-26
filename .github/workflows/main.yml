@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-    - main
+    - 07-directives-deep-dive
 
 
 permissions:
@@ -19,7 +19,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       with:
-        ref: main
+        ref: 07-directives-deep-dive
 
     - name: Setup Node.js
       uses: actions/setup-node@v2
