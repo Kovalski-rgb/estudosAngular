@@ -1,3 +1,10 @@
-<div class="square">
+<app-control-dots [centerAt]="{centerX: width/2, centerY: height}"></app-control-dots>
+<app-control-dots [centerAt]="{centerX: width, centerY: height/2}"></app-control-dots>
+<app-control-dots [centerAt]="{centerX: 0, centerY: height/2}"></app-control-dots>
+<app-control-dots [centerAt]="{centerX: width/2, centerY: 0}"></app-control-dots>
 
-</div>
+<div [ngStyle]="squareStyle()" 
+    draggable="true"
+    (dragstart)="triggerDragLift($event)" 
+    (dragend)="triggerDragDrop($event)"
+    doResize></div>

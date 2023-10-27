@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SquareComponent } from './square/square.component';
 import { ControlDotsComponent } from './control-dots/control-dots.component';
+import { DoResizeDirective } from './square/do-resize/do-resize.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SquareComponent,
-    ControlDotsComponent
+    ControlDotsComponent,
+    DoResizeDirective
   ],
   imports: [
     BrowserModule

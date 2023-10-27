@@ -1,1 +1,9 @@
-<p>control-dots works!</p>
+
+<div draggable="true" 
+    [ngStyle]="currentStyle()"
+    (dragstart)="triggerDragLift($event)" 
+    (drag)="triggerDragging($event)" 
+    (dragend)="triggerDragDrop($event)">
+</div>
+
+<!-- <div *ngIf="isDragging" [ngStyle]="ghostDot()"> </div> -->
