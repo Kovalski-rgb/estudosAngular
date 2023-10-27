@@ -1,17 +1,22 @@
-import { Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
+import { AfterViewInit, Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
 import { DotOrientation } from 'src/app/orientation.enum';
 
 @Directive({
   selector: '[doResize]'
 })
-export class DoResizeDirective {
+export class DoResizeDirective implements AfterViewInit {
 
 
   constructor(
     private el : ElementRef,
     private renderer: Renderer2
   ) { }
+
+  ngAfterViewInit(): void {
+    console.log(this.el.nativeElement);
+  }
   
+
   @HostListener('resizeTest') onResize(data:{orientation: DotOrientation, pos:number, dotSize:number}){
     console.log("this is called!");
     if(data.orientation === DotOrientation.RIGHT){

@@ -22,6 +22,8 @@ export class SquareComponent implements OnInit {
   isDragging : boolean = false; 
 
   constructor(
+    private el : ElementRef,
+    private renderer: Renderer2
   ) { }
 
   ngOnInit(): void {
@@ -47,6 +49,13 @@ export class SquareComponent implements OnInit {
     this.yOffSet = (eventData.offsetY);
     this.isDragging = true;
   } 
+
+  squareTestResize(data : {orientation: DotOrientation, pos:number, dotSize:number}){
+    if(data.orientation === DotOrientation.RIGHT){
+      let signal = (this.width+this.xPos >= data.pos) ? -1 : +1; 
+      this.width = (data.pos * signal) + data.dotSize/2;
+    }
+  }
 
   squareStyle() {
     return {
