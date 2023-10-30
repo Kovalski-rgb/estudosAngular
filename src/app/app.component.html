@@ -15,7 +15,7 @@
             {{odd}}
           </li>
         </div>
-        <div *ngIf="!onlyOdd">
+        <div *appUnless="onlyOdd">
           <li
             class="list-group-item"
             [ngClass]="{odd : onlyOdd}"
@@ -24,7 +24,7 @@
             {{even}}
           </li>
         </div>
-        <ng-template [ngIf]="!onlyOdd">
+        <!-- <ng-template [ngIf]="!onlyOdd">
           <div>
             <li
               class="list-group-item"
@@ -34,7 +34,7 @@
               {{even}}
             </li>
           </div>
-        </ng-template>
+        </ng-template> -->
       </ul>
       <p appBasicHighlight>Style me with basic directive!</p>
       <!-- da pra passar uma string sem os '' dentro dos ""  removendo os [] da propriedade -->
