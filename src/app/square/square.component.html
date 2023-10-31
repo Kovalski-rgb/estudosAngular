@@ -1,9 +1,14 @@
-<app-control-dots [centerAt]="{centerX: width/2, centerY: height}"></app-control-dots>
-<app-control-dots (resizeTest)="squareTestResize($event)" [centerAt]="{centerX: width, centerY: height/2}"></app-control-dots>
-<app-control-dots [centerAt]="{centerX: 0, centerY: height/2}"></app-control-dots>
-<app-control-dots [centerAt]="{centerX: width/2, centerY: 0}"></app-control-dots>
+<div *ngIf="showDots">
+        <app-control-dots [orientation]="0" [centerAt]="getPointLocation(0)" (resizeTest)="squareResize($event)"></app-control-dots>
+        <app-control-dots [orientation]="1" [centerAt]="getPointLocation(1)" (resizeTest)="squareResize($event)"></app-control-dots>
+        <app-control-dots [orientation]="2" [centerAt]="getPointLocation(2)" (resizeTest)="squareResize($event)"></app-control-dots>
+        <app-control-dots [orientation]="3" [centerAt]="getPointLocation(3)" (resizeTest)="squareResize($event)"></app-control-dots>
+    </div> 
 
 <div [ngStyle]="squareStyle()" 
     draggable="true"
+    tabindex="0"
+    (focus)="onFocus()"
     (dragstart)="triggerDragLift($event)" 
-    (dragend)="triggerDragDrop($event)"></div>
+    (dragend)="triggerDragDrop($event)">
+</div>

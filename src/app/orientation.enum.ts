@@ -1,6 +1,6 @@
 export enum DotOrientation {
-    UP,
-    RIGHT,
-    DOWN,
-    LEFT,
+    UP = 0,
+    RIGHT = 1,
+    DOWN = 2,
+    LEFT = 3,
 }
