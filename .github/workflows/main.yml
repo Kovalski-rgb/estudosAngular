@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-    - main
+    - 10-services-assignment
 
 
 permissions:
@@ -19,7 +19,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       with:
-        ref: main
+        ref: 10-services-assignment
 
     - name: Setup Node.js
       uses: actions/setup-node@v2
