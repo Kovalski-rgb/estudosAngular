@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-    - main
+    - 12-routing
 
 
 permissions:
@@ -19,7 +19,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       with:
-        ref: main
+        ref: 12-routing
 
     - name: Setup Node.js
       uses: actions/setup-node@v2
