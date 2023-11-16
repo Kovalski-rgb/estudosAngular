@@ -8,10 +8,12 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  isAuth: boolean;
   constructor(private router : Router, private authService: AuthService) { }
 
   ngOnInit() {
+    this.isAuth = this.authService.loggedIn;
+    this.authService.getIsAuthEmitter().subscribe((isAuth:boolean) => this.isAuth = isAuth);
   }
   
   onLoadServers(id: number){
