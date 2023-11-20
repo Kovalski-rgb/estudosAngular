@@ -1,24 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { NoFileScreenComponent } from './screens/no-file-screen/no-file-screen.component';
-import { AppRoutingModule } from './app-routing.module';
-import { FileUploaderDirective } from './utils/fileUploader/file-uploader.directive';
+import { DragDirective } from './dragDrop.directive';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NoFileScreenComponent,
-    FileUploaderDirective
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule
-  ],
-  providers: [],
+  imports: [BrowserModule, FormsModule],
+  declarations: [AppComponent, DragDirective],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
